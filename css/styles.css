@@ -65,13 +65,13 @@ nav a:hover::after {
 /* HOME */
 .home {
   display: flex;
-  flex-direction: row-reverse; /* texto a la izquierda, imagen a la derecha */
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
-  gap: 100px; /* Espacio entre texto e imagen */
+  gap: 100px;
 }
 
 .image-container {
@@ -146,7 +146,7 @@ nav a:hover::after {
 .btn-container {
   display: flex;
   justify-content: center;
-  margin: 50px auto 50px auto;
+  margin: 50px auto 40px auto;
   max-width: 1000px;
 }
 
@@ -167,7 +167,7 @@ nav a:hover::after {
 }
 .btn-descarga:link,
 .btn-descarga:visited {
-  color: #776254; /* Color de texto para enlaces */
+  color: #776254;
 }
 
 /* SOBRE MI */
@@ -201,7 +201,7 @@ main {
   justify-content: center;
   flex-shrink: 0;
   margin-left: -500px;
-  margin-top: 109px;
+  margin-top: 50px;
 }
 
 .imagen-container img {
@@ -424,12 +424,16 @@ main {
 
 /* FOOTER */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: #1a1a1a;
   padding: 20px;
   text-align: center;
   color: #d9d9d9;
   font-size: 11px;
-  margin-top: auto;
+  margin-top: 0;
 }
 
 .social-buttons {
