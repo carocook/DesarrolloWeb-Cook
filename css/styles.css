@@ -65,12 +65,13 @@ nav a:hover::after {
 /* HOME */
 .home {
   display: flex;
+  flex-direction: row-reverse; /* texto a la izquierda, imagen a la derecha */
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
+  gap: 100px; /* Espacio entre texto e imagen */
 }
 
 .image-container {
@@ -82,9 +83,6 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-right: -500px;
-  margin-top: -10px;
-  margin-bottom: 52px;
 }
 
 .image-home {
@@ -94,11 +92,10 @@ nav a:hover::after {
 }
 
 .text-container {
-  max-width: 600px;
-  text-align: left;
-  margin-left: -500px;
-  margin-bottom: 52px;
-  margin-top: -30px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro-text {
@@ -144,6 +141,33 @@ nav a:hover::after {
   line-height: 1.5;
   text-align: left;
   margin-top: 14px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+  max-width: 1000px;
+}
+
+.btn-descarga {
+  background-color: #1e1e1e;
+  color: 776254;
+  border: 2px solid #776254;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-descarga:hover {
+  background-color: #5d4b36;
+}
+.btn-descarga:link,
+.btn-descarga:visited {
+  color: #776254; /* Color de texto para enlaces */
 }
 
 /* SOBRE MI */
